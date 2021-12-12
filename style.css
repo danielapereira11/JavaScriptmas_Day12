@@ -76,6 +76,7 @@ li {
 button {
   background: var(--dark-green);
   color: var(--snow);
+  margin-top: 3px;
 }
 
 button:hover,
