@@ -17,6 +17,14 @@ function renderGestList() {
 
 renderGestList();
 
+function addNewGuests() {
+  let newGuest = input.value;
+  guests.push(newGuest);
+  guestList.innerHTML += `<li>${newGuest}</li>`;
+}
+
+btn.addEventListener("click", addNewGuests);
+
 // Tasks:
 // - Write the JS to render the Christmas day guest list in the guest-list element.
 // - Add the functionality to add new guests.
