@@ -1,6 +1,7 @@
 const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const removeBtn = document.getElementById("remove-btn");
+const removeEvilBtn = document.getElementById("remove-evil-btn");
 let guestList = document.getElementById("guest-list");
 let guests = [
   "Partner",
@@ -29,8 +30,14 @@ function removeLastGuest() {
   guestList.removeChild(guestList.lastElementChild);
 }
 
+function removeEvilOne() {
+  guests.splice(3, 1);
+  // removes the Evil Guest only from the guests array
+}
+
 btn.addEventListener("click", addNewGuests);
 removeBtn.addEventListener("click", removeLastGuest);
+removeEvilBtn.addEventListener("click", removeEvilOne);
 
 // Tasks:
 // - Write the JS to render the Christmas day guest list in the guest-list element.
