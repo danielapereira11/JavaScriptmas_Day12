@@ -9,6 +9,14 @@ let guests = [
   "Lonely Neighbour",
 ];
 
+function renderGestList() {
+  for (let i = 0; i < guests.length; i++) {
+    guestList.innerHTML += `<li>${guests[i]}</li>`;
+  }
+}
+
+renderGestList();
+
 // Tasks:
 // - Write the JS to render the Christmas day guest list in the guest-list element.
 // - Add the functionality to add new guests.
