@@ -18,6 +18,7 @@ function renderGestList() {
 }
 
 renderGestList();
+// maybe try this using append child to see if I can temove the evil family member
 
 function addNewGuests() {
   let newGuest = input.value;
